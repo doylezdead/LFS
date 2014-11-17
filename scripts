@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#move to source dir
+cd source
+
+##download all from sourcelist
+for i in $(cat ../sourcelist); do 
+	wget $i;
+done
+
+for i in $(cat ../patchlist); do 
+	wget $i;
+done
+
